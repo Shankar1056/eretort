@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="4dp"
+    android:gravity="center">
+<LinearLayout
+    android:layout_width="83dp"
+    android:layout_height="83dp"
+    android:orientation="vertical"
+    android:id="@+id/layout"
+    android:gravity="center"
+    android:layout_marginTop="@dimen/margin_5"
+    android:layout_marginLeft="@dimen/margin_5"
+    android:background="@drawable/circle">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/CatImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:civ_border_color="@color/white"
+        app:civ_shadow="true"
+        app:civ_border_width="4dp"
+        app:civ_shadow_color="@color/new_color"
+        app:civ_shadow_radius="12" />
+
+</LinearLayout>
+    <TextView
+        android:id="@+id/CatTextView"
+        fontPath="@string/regular_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Name"
+        android:textSize="@dimen/textsize_medium"
+        android:textColor="@color/new_color"
+        tools:ignore="MissingPrefix" />
+
+
+</LinearLayout>

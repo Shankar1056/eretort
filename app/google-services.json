@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "136057140665",
+    "firebase_url": "https://school-management-15a64.firebaseio.com",
+    "project_id": "school-management-15a64",
+    "storage_bucket": "school-management-15a64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136057140665:android:b754c5fd942fc8f6",
+        "android_client_info": {
+          "package_name": "com.apextechies.eretort"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136057140665-9dhahpsbagmd1fit9p73tnsqie0f65oa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apextechies.eretort",
+            "certificate_hash": "321bbf7ac25ec1b2fa18f142475fdaade22eff3e"
+          }
+        },
+        {
+          "client_id": "136057140665-d9k1pmcq3eg4ra2hghltaem3t4m89nt9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0I2FOgy0FMKJ7YaR2lCaT4CajTtLGd2A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136057140665-d9k1pmcq3eg4ra2hghltaem3t4m89nt9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

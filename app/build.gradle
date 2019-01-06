@@ -1,0 +1,131 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+    maven {
+        url "https://maven.google.com" // Google's Maven repository
+    }
+
+    jcenter()
+    maven { url "https://jitpack.io" }
+
+}
+
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword 'schoolmanagement'
+            storeFile file('D:/AllAndroidApp/All Clients work/Amazing Bazar/etodo_webspider_backup/schoolmanagement.jks')
+            storePassword 'schoolmanagement'
+        }
+    }
+    compileSdkVersion 28
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.apextechies.eretort"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 2
+        versionName "1.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        signingConfig signingConfigs.config
+
+       javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath false
+            }
+        }
+    }
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+        }
+        debug {
+            debuggable true
+        }
+
+    }
+    lintOptions {
+        abortOnError false
+        disable 'MissingTranslation'
+        checkReleaseBuilds false
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    lintOptions {
+        abortOnError false
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testCompile 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    compile('com.crashlytics.sdk.android:crashlytics:2.7.1@aar') {
+        transitive = true
+    }
+    compile 'com.github.chenupt.android:multiplemodel:1.1.0@aar'
+    compile 'com.google.guava:guava:18.0'
+    compile 'com.firebase:digitsmigrationhelpers:0.1.1'
+    compile 'com.firebaseui:firebase-ui-auth:2.0.1'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.google.android.gms:play-services:11.4.2'
+    //view pager
+    compile 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+    //calligrapy gradle
+    compile 'uk.co.chrisjenx:calligraphy:2.3.0'
+    compile 'com.theartofdev.edmodo:android-image-cropper:2.5.+'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.amazonaws:aws-android-sdk-s3:2.6.4'
+    compile 'com.amazonaws:aws-android-sdk-core:2.6.4'
+    compile 'com.mikhaellopez:circularimageview:3.0.2'
+//    compile 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
+    compile 'io.realm:realm-android:0.87.3'
+    compile 'com.mikhaellopez:circularimageview:3.0.2'
+    //compile "io.realm:realm-gradle-plugin:3.3.1"
+    compile 'io.realm:realm-android:0.79.0'
+    compile project(':horizontalcalendar')
+    compile 'me.biubiubiu.justifytext:library:1.1'
+    compile 'com.wdullaer:materialdatetimepicker:2.3.0'
+    compile 'org.sufficientlysecure:html-textview:3.5'
+    compile project(':shimmer')
+    implementation 'com.android.support:design:28.0.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    implementation 'net.danlew:android.joda:2.9.9'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    //    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    //    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+}
+apply plugin: 'com.google.gms.google-services'

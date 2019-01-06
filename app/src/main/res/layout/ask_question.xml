@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/background">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/topheader">
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/edit_card"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/toolbar">
+        <EditText
+            android:id="@+id/edit_ques"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/your_ques"
+            android:textColor="@color/new_color"
+            android:textColorHint="@color/new_color"
+            android:textSize="@dimen/textsize_small"
+            android:padding="@dimen/margin_15"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_below="@+id/edit_card">
+
+        <ImageView
+            android:id="@+id/quick_start_cropped_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/background_add"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@mipmap/add_black"
+            android:gravity="center"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/new_color"
+            android:textSize="15sp"
+            android:onClick="onSelectImageClick"
+            android:text="Upload Image"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:text="@string/upload"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+</RelativeLayout>

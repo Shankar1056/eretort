@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background">
+    <include
+        layout="@layout/toptoolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/textsize_15"
+        android:layout_marginRight="@dimen/textsize_15"
+        android:layout_marginTop="@dimen/textsize_15"
+        android:layout_marginBottom="@dimen/margin_10"
+        >
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/text_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textsize_15"
+            android:layout_margin="@dimen/margin_15"
+            fontPath="@string/bold_font"
+            tools:ignore="MissingPrefix"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/textsize_15"
+        android:layout_marginRight="@dimen/textsize_15"
+        android:layout_marginBottom="@dimen/textsize_15">
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/text_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textsize_small"
+            android:layout_margin="@dimen/margin_15"
+            fontPath="@string/regular_font"
+            tools:ignore="MissingPrefix"/>
+    </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

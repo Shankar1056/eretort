@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#272727</color>
+	<color name="colorPrimaryDark">#272727</color>
+	<color name="colorAccent">#272727</color>
+    <color name="white">#FFFFFF</color>
+	<color name="colorHeading">#34383c</color>
+	<color name="colorGray">#575757</color>
+	<color name="secondaryText_new">#B1B2B3</color>
+	<color name="background">#EDEDED</color>
+	<color name="demo_dark_transparent">#24000000</color>
+	<color name="colordivider">#B7B7B7</color>
+	<color name="dialogtextcolor">#282828</color>
+
+	<color name="colorOrange">#FF7122</color>
+
+	<color name="summer">#44eebd82</color>
+	<color name="fall">#44d8d27e</color>
+	<color name="winter">#44a1c1da</color>
+	<color name="spring">#448da64b</color>
+	<color name="today">#4b82ff</color>
+	<color name="new_color">#D8B66E</color>
+	<color name="colorPrimaryGrid">#2874f0</color>
+	<color name="colorPrimaryDarkGrid">#2368d7</color>
+	<color name="colorAccentGrid">#388e3c</color>
+	<color name="textColor">#ffffff</color>
+	<color name="color_de00000">#de000000</color>
+	<color name="color_8a00000">#8a000000</color>
+	<color name="light_black">#2e2e2e</color>
+</resources>

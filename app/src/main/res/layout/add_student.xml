@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toptoolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:layout_marginTop="@dimen/main_view_margin_top"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--For absent present count -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_15dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/studentRegIdTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="@dimen/margin_10dp"
+                        android:background="@drawable/ss_hollow_rect_green"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/heading_size"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/input_rollnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/ss_hollow_rect_green"
+                        android:hint="Roll Number*"
+                        android:imeOptions="actionNext"
+                        android:inputType="number|phone"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size"
+                        android:textColorHint="@color/white"/>
+
+                    <EditText
+                        android:id="@+id/input_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:background="@drawable/ss_hollow_rect_green"
+                        android:hint="Student's Full Name*"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size"
+                        android:textColorHint="@color/white"/>
+
+                    <EditText
+                        android:id="@+id/input_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:background="@drawable/ss_hollow_rect_green"
+                        android:hint="Email Id"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size"
+                        android:textColorHint="@color/white"/>
+
+
+                    <EditText
+                        android:id="@+id/input_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:background="@drawable/ss_hollow_rect_green"
+                        android:hint="Mobile Number"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size"
+                        android:textColorHint="@color/white" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:background="@drawable/ss_hollow_rect_green">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_marginRight="@dimen/margin_5dp"
+                            android:layout_weight="1">
+
+                            <Spinner
+                                android:id="@+id/classNameSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@null" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorAccent" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_marginLeft="@dimen/margin_5dp"
+                            android:layout_weight="1">
+
+                            <Spinner
+                                android:id="@+id/sectionNameSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@null" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/input_father_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:background="@drawable/ss_hollow_rect_green"
+                        android:hint="Father Name"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size"
+                        android:textColorHint="@color/white" />
+
+                    <EditText
+                        android:id="@+id/input_father_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:background="@drawable/ss_hollow_rect_green"
+                        android:hint="Father Mobile"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:maxLength="15"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size"
+                        android:textColorHint="@color/white" />
+
+                    <EditText
+                        android:id="@+id/input_mother_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:background="@drawable/ss_hollow_rect_green"
+                        android:hint="Mother Name"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size"
+                        android:textColorHint="@color/white" />
+
+                    <EditText
+                        android:id="@+id/input_mother_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:background="@drawable/ss_hollow_rect_green"
+                        android:hint="Mother Mobile"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:maxLength="15"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size"
+                        android:textColorHint="@color/white"/>
+
+                    <EditText
+                        android:id="@+id/input_admission"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:background="@drawable/ss_hollow_rect_green"
+                        android:focusable="false"
+                        android:hint="Admidsion Date"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size"
+                        android:textColorHint="@color/white"/>
+
+                    <EditText
+                        android:id="@+id/input_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:background="@drawable/ss_hollow_rect_green"
+                        android:hint="Full Address*"
+                        android:imeOptions="actionDone"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size"
+                        android:textColorHint="@color/white" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+    <!--Buttons in border-->
+    <RelativeLayout
+        android:id="@+id/buttonLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <!--Submit button for adding student-->
+        <LinearLayout
+            android:id="@+id/submitButtonLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--For absent present count -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10dp"
+                android:clickable="false"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="10dp">
+
+                <include layout="@layout/common_button" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <!--Update & Delete button for updating students details and deleting student from school-->
+        <LinearLayout
+            android:id="@+id/updateButtonLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--For absent present count -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10dp"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/updateButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_marginRight="@dimen/margin_5dp"
+                            android:layout_weight=".3"
+                            android:background="@drawable/roundedcorner_button"
+                            android:gravity="center"
+                            android:paddingRight="@dimen/padding_10dp"
+                            android:text="Update"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_16.7" />
+
+                        <Button
+                            android:id="@+id/seeAttendanceButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_marginLeft="@dimen/margin_5dp"
+                            android:layout_weight=".7"
+                            android:background="@drawable/roundedcorner_button"
+                            android:gravity="center"
+                            android:paddingRight="@dimen/padding_10dp"
+                            android:text="Attendance"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_16.7" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sendMessageButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_marginRight="@dimen/margin_5dp"
+                            android:layout_weight=".7"
+                            android:background="@drawable/roundedcorner_button"
+                            android:gravity="center"
+                            android:paddingRight="@dimen/padding_10dp"
+                            android:text="Send Message"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_16.7" />
+
+                        <Button
+                            android:id="@+id/deleteButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_marginLeft="@dimen/margin_5dp"
+                            android:layout_weight=".3"
+                            android:background="@drawable/roundedcorner_button"
+                            android:gravity="center"
+                            android:paddingRight="@dimen/padding_10dp"
+                            android:text="Delete"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_16.7" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

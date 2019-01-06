@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background">
+    <include layout="@layout/toptoolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_10">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="@dimen/margin_60"
+            android:background="@mipmap/ic_launcher"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_10">
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/new_color"
+                android:textSize="@dimen/margin_15"
+                android:singleLine="true"
+                android:text="User Name: Shankar Kumar"/>
+            <TextView
+                android:id="@+id/tv_userid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/new_color"
+                android:text=""
+                android:textSize="@dimen/margin_15"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/margin_5"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_15">
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/new_color"
+        android:textSize="@dimen/margin_15"
+        android:singleLine="true"
+        android:text="Name: Shankar Kumar"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@color/new_color"/>
+        <TextView
+            android:id="@+id/tv_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/new_color"
+            android:textSize="@dimen/margin_15"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/margin_15"
+            android:text="Class: 11th"/>
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@color/new_color"/>
+        <TextView
+            android:id="@+id/tvsec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/new_color"
+            android:textSize="@dimen/margin_15"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/margin_15"
+            android:text="Sec: B"/>
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@color/new_color"/>
+        <TextView
+            android:id="@+id/parentname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/new_color"
+            android:textSize="@dimen/margin_15"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/margin_15"
+            android:text="Father's Name: Shankar Kumar"/>
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@color/new_color"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toptoolbar"/>
+    <br.tiagohm.horizontalcalendar.HorizontalCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:textColorSelected="#FFFF"
+        app:textSizeDayName="14sp"
+        app:textSizeDayNumber="20sp"
+        app:selectorColor="#c62828"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/examscedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/background">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

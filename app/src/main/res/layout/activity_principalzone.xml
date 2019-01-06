@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activity.MainActivity">
+
+
+    <include layout="@layout/toptoolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/main_view_margin_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_15dp"
+                android:paddingRight="@dimen/padding_15dp">
+
+                <RelativeLayout
+                    android:layout_width="75dp"
+                    android:layout_height="75dp">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/userProfilePicIv"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/user"
+                        app:civ_border_color="#dc5da4"
+                        app:civ_border_overlay="true"
+                        app:civ_border_width="2dp" />
+
+                    <ProgressBar
+                        android:id="@+id/progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/school_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sub_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/userNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/na"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10dp"
+                    android:orientation="vertical">
+                    <!--Row 1-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".25"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/manageStudentRl"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/iv_news"
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/margin_5dp"
+                                    android:background="@drawable/manage_student"
+                                    android:scaleType="centerCrop" />
+
+                                <TextView
+                                    android:fontFamily="@string/regular_font"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/iv_news"
+                                    android:layout_marginTop="@dimen/margin_10dp"
+                                    android:gravity="center"
+                                    android:text="@string/manage_students"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="@dimen/text_13.3"
+                                    tools:ignore="MissingPrefix" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".25"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/manageTeacherRl"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/syllabusIv"
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/margin_5dp"
+                                    android:background="@drawable/manage_teacher"
+                                    android:scaleType="centerCrop" />
+
+                                <TextView
+                                    android:fontFamily="@string/regular_font"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/syllabusIv"
+                                    android:layout_marginTop="@dimen/margin_10dp"
+                                    android:gravity="center"
+                                    android:text="@string/manage_teachers"
+                                    android:textColor="@color/colorPrimary"
+                                    tools:ignore="MissingPrefix" />
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".25"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/admissionRl"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/timetableIv"
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/margin_5dp"
+                                    android:background="@drawable/admission_list_icon"
+                                    android:scaleType="centerCrop" />
+
+                                <TextView
+                                    android:fontFamily="@string/regular_font"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/timetableIv"
+                                    android:layout_marginTop="@dimen/margin_10dp"
+                                    android:gravity="center"
+                                    android:text="@string/admission_list"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="@dimen/text_13.3"
+                                    tools:ignore="MissingPrefix" />
+
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".25"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/manageBusRl"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/iv_events"
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/margin_5dp"
+                                    android:background="@drawable/manage_bus"
+                                    android:scaleType="centerCrop" />
+
+                                <TextView
+                                    android:fontFamily="@string/regular_font"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/iv_events"
+                                    android:layout_marginTop="@dimen/margin_10dp"
+                                    android:gravity="center"
+                                    android:text="@string/manage_bus"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="13.3dp"
+                                    tools:ignore="MissingPrefix" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <!--Row 2-->
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".25"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/manageStudentRl"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/iv_news"
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/margin_5dp"
+                                    android:background="@drawable/manage_student"
+                                    android:scaleType="centerCrop" />
+
+                                <TextView
+                                    fontPath="@string/roboto_regular"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/iv_news"
+                                    android:layout_marginTop="@dimen/margin_10dp"
+                                    android:gravity="center"
+                                    android:text="@string/manage_students"
+                                    android:textColor="@color/colorTextPrimary"
+                                    android:textSize="@dimen/text_13.3"
+                                    tools:ignore="MissingPrefix" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".25"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/manageTeacherRl"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/syllabusIv"
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/margin_5dp"
+                                    android:background="@drawable/manage_teacher"
+                                    android:scaleType="centerCrop" />
+
+                                <TextView
+                                    fontPath="@string/roboto_regular"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/syllabusIv"
+                                    android:layout_marginTop="@dimen/margin_10dp"
+                                    android:gravity="center"
+                                    android:text="@string/manage_teachers"
+                                    android:textColor="@color/colorTextPrimary"
+                                    tools:ignore="MissingPrefix" />
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".25"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/addEventsRl"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/timetableIv"
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/margin_5dp"
+                                    android:background="@drawable/manage_fee"
+                                    android:scaleType="centerCrop" />
+
+                                <TextView
+                                    fontPath="@string/roboto_regular"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/timetableIv"
+                                    android:layout_marginTop="@dimen/margin_10dp"
+                                    android:gravity="center"
+                                    android:text="@string/manage_fee"
+                                    android:textColor="@color/colorTextPrimary"
+                                    android:textSize="@dimen/text_13.3"
+                                    tools:ignore="MissingPrefix" />
+
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".25"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/manageBusRl"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/iv_events"
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/margin_5dp"
+                                    android:background="@drawable/manage_bus"
+                                    android:scaleType="centerCrop" />
+
+                                <TextView
+                                    fontPath="@string/roboto_regular"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/iv_events"
+                                    android:layout_marginTop="@dimen/margin_10dp"
+                                    android:gravity="center"
+                                    android:text="@string/manage_bus"
+                                    android:textColor="@color/colorTextPrimary"
+                                    android:textSize="@dimen/text_13.3"
+                                    tools:ignore="MissingPrefix" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>-->
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:id="@+id/sendMessageLl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_15dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/send"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/heading_size"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/circle"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/send" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_15dp"
+                        android:layout_weight="1"
+                        android:text="@string/message"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/heading_size"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_50"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:layout_marginRight="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/publishNoticeTab"
+                            android:fontFamily="@string/regular_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_marginRight="@dimen/margin_5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/background1"
+                            android:drawableRight="@drawable/checked_circle"
+                            android:gravity="center"
+                            android:paddingRight="@dimen/padding_10dp"
+                            android:text="@string/publish_notice"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/margin_15"
+                            android:textStyle="bold"
+                            tools:ignore="MissingPrefix" />
+
+                        <Button
+                            android:id="@+id/addEventTab"
+                            android:fontFamily="@string/regular_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_marginLeft="@dimen/margin_5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/background1"
+                            android:drawableRight="@drawable/unchecked_circled"
+                            android:gravity="center"
+                            android:paddingRight="@dimen/padding_10dp"
+                            android:text="@string/add_event"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/margin_15"
+                            android:textStyle="bold"
+                            tools:ignore="MissingPrefix" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/publishNoticeLl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_10dp">
+
+                        <EditText
+                            android:id="@+id/noticeTitleEt"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@drawable/ss_hollow_rect_green"
+                            android:hint="@string/enter_notice_title"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+                        <EditText
+                            android:id="@+id/noticeDescEt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ss_hollow_rect_green"
+                            android:gravity="start"
+                            android:hint="@string/enter_notice_description"
+                            android:imeOptions="actionDone"
+                            android:inputType="textMultiLine"
+                            android:minHeight="100dp"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size" />
+
+                        <Button
+                            android:id="@+id/publishNoticeBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_marginTop="@dimen/margin_10dp"
+                            android:background="@drawable/button_background"
+                            android:text="@string/publish_notice"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/addEventsLl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_10dp"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/eventTitleEt"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@drawable/ss_hollow_rect_green"
+                            android:hint="@string/enter_event_title"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size" />
+
+                        <EditText
+                            android:id="@+id/eventDescEt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ss_hollow_rect_green"
+                            android:gravity="start"
+                            android:hint="@string/enter_event_description"
+                            android:imeOptions="actionDone"
+                            android:inputType="textMultiLine"
+                            android:minHeight="100dp"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size" />
+
+                        <Button
+                            android:id="@+id/addEventBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_marginTop="@dimen/margin_10dp"
+                            android:background="@drawable/button_background"
+                            android:text="@string/add_event"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

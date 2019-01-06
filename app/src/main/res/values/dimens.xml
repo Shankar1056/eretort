@@ -1,0 +1,51 @@
+<resources>
+	<dimen name="fab_margin">16dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+	<dimen name="margin_10">10dp</dimen>
+	<dimen name="margin_15">15dp</dimen>
+	<dimen name="margin_40">40dp</dimen>
+	<dimen name="margin_50">50dp</dimen>
+	<dimen name="margin_60">60dp</dimen>
+
+
+    <dimen name="textsize_small">12sp</dimen>
+	<dimen name="textsize_15">15sp</dimen>
+	<dimen name="textsize_10">10sp</dimen>
+	<dimen name="textsize_18">18sp</dimen>
+	<dimen name="textsize_medium">14sp</dimen>
+	<dimen name="textsize_large">18sp</dimen>
+	<dimen name="textsize_extralarge">20sp</dimen>
+
+
+
+	<dimen name="heading_text_size">16sp</dimen>
+	<dimen name="text_size">14sp</dimen>
+	<dimen name="sub_text_size">12sp</dimen>
+	<dimen name="button_height">45dp</dimen>
+	<dimen name="edittext_height">35dp</dimen>
+	<dimen name="heading_size">16sp</dimen>
+
+	<dimen name="text_size_20sp">20sp</dimen>
+	<dimen name="text_size_18sp">18sp</dimen>
+	<dimen name="margin_5dp">5dp</dimen>
+	<dimen name="margin_15dp">15dp</dimen>
+	<dimen name="margin_25dp">25dp</dimen>
+	<dimen name="margin_10dp">10dp</dimen>
+	<dimen name="padding_20dp">20dp</dimen>
+	<dimen name="padding_15dp">15dp</dimen>
+	<dimen name="padding_5dp">5dp</dimen>
+	<dimen name="padding_10dp">10dp</dimen>
+	<dimen name="grid_border_width">2dp</dimen>
+
+	<dimen name="text_13.3">13sp</dimen>
+	<dimen name="text_16.7">16sp</dimen>
+	<dimen name="text_11.8">11sp</dimen>
+	<dimen name="text_20">20sp</dimen>
+	<dimen name="text_15">15sp</dimen>
+	<dimen name="text_12.8">12sp</dimen>
+	<dimen name="main_view_margin_top">60dp</dimen>
+
+
+
+
+</resources>

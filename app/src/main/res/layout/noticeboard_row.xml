@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_extralarge"
+        android:textColor="@color/white"
+        android:text="S1001"
+        fontPath="@string/bold_font"
+        tools:ignore="MissingPrefix"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_marginLeft="@dimen/margin_10"/>
+    <me.biubiubiu.justifytext.library.JustifyTextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_small"
+        fontPath="@string/regular_font"
+        tools:ignore="MissingPrefix"
+        android:textColor="@color/white"
+        android:text="Test Manager"
+        android:layout_marginLeft="@dimen/margin_10"/>
+
+    <TextView
+        android:id="@+id/textShortDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_small"
+        android:textColor="@color/white"
+        android:text="[12-12-2017] - Test Manager"
+        android:layout_marginBottom="@dimen/margin_10"
+        fontPath="@string/regular_font"
+        tools:ignore="MissingPrefix"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="@dimen/margin_10"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white"/>
+</LinearLayout>

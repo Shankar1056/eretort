@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+
+
+        <declare-styleable name="CalendarView">
+            <attr name="dateFormat" format="string"/>
+        </declare-styleable>
+
+        <declare-styleable name="ShaderSeek">
+            <attr name="ArcstartValue" format="float"/>
+            <attr name="ArcendValue" format="float"/>
+            <attr name="Arcprogress" format="float"/>
+            <attr name="ArcstartAngle" format="float"/>
+            <attr name="ArcendAngle" format="float"/>
+            <attr name="ArcarcWidthRate" format="float"/>
+            <attr name="ArcstartColor" format="integer"/>
+            <attr name="ArcendColor" format="integer"/>
+            <attr name="ArcshowMark" format="boolean"/>
+            <attr name="ArcmarkSize" format="integer" />
+            <attr name="ArcmarkColor" format="integer" />
+            <attr name="ArcshowProgress" format="boolean"/>
+            <attr name="ArcprogressTextSize" format="integer" />
+            <attr name="ArcprogressTextColor" format="integer" />
+            <attr name="ArclineColor" format="integer" />
+        </declare-styleable>
+
+
+
+</resources>
